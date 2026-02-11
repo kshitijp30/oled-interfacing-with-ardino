@@ -12,6 +12,14 @@ void setup() {
         Serial.println(F("OLED not found"));
         while(true);
     }
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(0, 0);
+    display.println("Arduino U");
+    display.println("OLED with I2C");
+    display.println("Hello, World!");
+    display.display();
 }
 
 void loop() {
