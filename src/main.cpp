@@ -18,7 +18,7 @@ void setup() {
     display.setCursor(0, 0);
     display.println("Arduino U");
     display.println("OLED with I2C");
-    display.println("Hello, World!");
+    display.println("Hello, kshitij!!");
     display.display();
 }
 
