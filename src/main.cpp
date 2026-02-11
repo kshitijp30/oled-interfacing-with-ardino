@@ -5,9 +5,13 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define OLED_ADDR 0x3C
-
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT);
 void setup() {
-
+    Serial.begin(9600);
+    if(!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
+        Serial.println(F("OLED not found"));
+        while(true);
+    }
 }
 
 void loop() {
