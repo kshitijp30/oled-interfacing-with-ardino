@@ -23,5 +23,5 @@ void setup() {
 }
 
 void loop() {
-
+        // Nothing to do in the loop
 }
